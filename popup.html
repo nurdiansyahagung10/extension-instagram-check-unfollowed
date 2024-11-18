@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>INSTAGRAM SEE WHO UNFOLLOWED</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body style="background-color: white; ">
+    <div style="min-width: 320px;">
+        <h1>See Who Unfollowed</h1>
+        <div style="display: flex; gap: 10px;">
+
+            <button id="back"
+                style="font-weight: bold; border: 1px solid rgba(0, 0, 0, 0.055); box-shadow: 0px 2px 2px 0.5px rgba(0, 0, 0, 0.1);   display: none; padding: 6px; flex: auto; background-color: white;  border-radius:3px;">Back</button>
+            <button id="other-profile"
+                style="font-weight: bold; border: 1px solid rgba(0, 0, 0, 0.055); box-shadow: 0px 2px 2px 0.5px rgba(0, 0, 0, 0.1); padding: 6px; flex: auto; background-color: white;  border-radius:3px;">Other
+                Account</button>
+            <button id="my-profile"
+                style="font-weight: bold; border: 1px solid rgba(0, 0, 0, 0.055); box-shadow: 0px 2px 2px 0.5px rgba(0, 0, 0, 0.1);  padding: 6px; flex: auto; background-color: white;  border-radius:3px;">My
+                Account</button>
+        </div>
+        <div id="search-profile"
+            style="overflow: hidden; transition: 0.3s all; margin-top: 10px; height: 0; display: flex; gap:10px;">
+            <input type="text" placeholder="Type Another Account Username Here" id="datausername"
+                style="flex: auto; border-radius:3px; border: 1px solid rgba(0, 0, 0, 0.055);  padding: 7px; border-collapse: collapse; background-color: transparent; color: white; outline: none;"
+                >
+           
+        </div>
+        <form id="form-search" style=" height: 0; overflow: hidden; margin-top: 10px;">
+            <table 
+            style="text-align: left; border: 1px solid rgba(173, 216, 230, 0.235); border-radius: 20px !important; width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="font-weight: bold; background-color: rgba(145, 177, 187, 0.135);">
+                        <th>Click The Correct Username Bellow</th>
+                    </tr>
+                </thead>
+                <tbody id="showdata-search">
+
+                </tbody>
+            </table>
+        </form>
+        <div id="table" style="overflow: hidden;">
+            <table  
+            style="text-align: left; border: 1px solid rgba(173, 216, 230, 0.235); border-radius: 20px !important; width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr style="font-weight: bold; background-color: rgba(145, 177, 187, 0.135);">
+                    <th style="padding-right: 60px;">Username</th>
+                    <th >Profile Link</th>
+                </tr>
+            </thead>
+            <tbody id="showdata">
+            </tbody>
+        </table>
+
+        </div>
+    </div>
+    <div class="loader">
+
+        <script id="extendscript"></script>
+        <script type="module" src="popup.js"></script>
+</body>
+
+</html>

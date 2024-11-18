@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram See Unfollowed",
+  "version": "1.0",
+  "permissions": [
+   
+    "activeTab"
+    
+  ],
+  "host_permissions": [
+    "https://www.instagram.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
